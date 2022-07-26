@@ -150,6 +150,7 @@ const sendBasicMessage = async (connectionID, body) => {
 
 module.exports = {
   createInvitation,
+  acceptInvitation,
   fetchConnection,
   queryConnections,
   sendBasicMessage,

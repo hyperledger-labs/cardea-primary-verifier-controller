@@ -21,7 +21,6 @@ const createSingleUseInvitation = async (
       multiUse,
       public,
     )
-    console.log(invitationMessage)
 
     await Connections.createOrUpdateConnection(
       invitationMessage.connection_id,
