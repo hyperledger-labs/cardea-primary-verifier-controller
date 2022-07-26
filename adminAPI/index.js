@@ -5,6 +5,7 @@ const DIDs = require('./dids')
 const Ledger = require('./ledger')
 const Schemas = require('./schemas')
 const Presentations = require('./presentations')
+const QuestionAnswer = require('./questionAnswer')
 const OOB = require('./oob')
 
 module.exports = {
@@ -16,4 +17,6 @@ module.exports = {
   Schemas,
   OOB,
   Presentations,
+  QuestionAnswer,
+  OOB,
 }

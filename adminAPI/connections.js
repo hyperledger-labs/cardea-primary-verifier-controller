@@ -154,4 +154,5 @@ module.exports = {
   fetchConnection,
   queryConnections,
   sendBasicMessage,
+  acceptInvitation,
 }

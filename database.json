@@ -9,3 +9,4 @@
     "password": {"ENV": "DB_PASSWORD"}
   }
 }
+
