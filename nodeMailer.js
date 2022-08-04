@@ -13,31 +13,6 @@ async function emailService() {
     currentSMTP.dataValues.value.IV,
   )
 
-  // const transporter = nodemailer.createTransport({
-  //   host: currentSMTP.dataValues.value.host,
-  //   // (eldersonar) We enforce port 587 for TLS connection
-  //   port:
-  //     currentSMTP.dataValues.value.port === 587
-  //       ? currentSMTP.dataValues.value.port
-  //       : 587,
-  //   // port:
-  //   //   currentSMTP.dataValues.value.port === 465
-  //   //     ? currentSMTP.dataValues.value.port
-  //   //     : 465,
-  //   // (eldersonar) We enforce TLS connection. False for STARTTLS
-  //   secure: currentSMTP.dataValues.value.encryption === 'tls' ? false : false,
-  //   auth: {
-  //     user: currentSMTP.dataValues.value.auth.mailUsername
-  //       ? currentSMTP.dataValues.value.auth.mailUsername
-  //       : currentSMTP.dataValues.value.auth.email,
-  //     pass: decryptedPassword,
-  //   },
-  //   tls: {
-  //     // (eldersonar) Change to "false" to not fail on invalid certs
-  //     rejectUnauthorized: true,
-  //   },
-  // })
-
   const transporter = nodemailer.createTransport({
     host: currentSMTP.dataValues.value.host,
     // (eldersonar) Defaults to 587 if "secure" is false or no value provided or 465 if true
